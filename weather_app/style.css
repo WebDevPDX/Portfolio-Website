@@ -1,0 +1,177 @@
+/*
+MOBILE FIRST - SMALLEST VIEWPORT SETUP
+*/
+
+body {
+	font-family: Verdana, sans-serif;
+	font-size: 18px;
+	margin-bottom: 80px;
+}
+
+div {
+	text-align: center;
+}
+
+.now-frame {
+	border: 2px solid black;
+}
+
+.now-frame > .row {
+	height: 150px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.today-div {
+	margin-bottom: 20px;
+}
+
+.forecast-frame {
+	height: 80px;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+}
+
+.icon img {
+	height: 80px;
+}
+
+.icon-1, 
+.icon-2, 
+.icon-3 {
+	height: 80px;
+	padding-top: 14px;
+}
+
+.icon-1 > img, 
+.icon-2 > img, 
+.icon-3 > img {
+	height: 50px;
+}
+
+.temperature-div {
+	padding-top: 20px;
+}
+
+.temperature-div-1, 
+.temperature-div-2, 
+.temperature-div-3 {
+	padding-top: 28px;
+}
+
+span {
+	text-align: center;
+	display: block;
+}
+
+.temperature-div > p {
+	font-size: 14px;
+	padding-left: 5px;
+}
+
+.weekday-1, 
+.weekday-2, 
+.weekday-3 {
+	padding-top: 28px;
+}
+
+form {
+	padding-top: 20px;
+	vertical-align: bottom;
+	position: relative;
+}
+
+.container {
+	height: 80px;
+}
+
+.footer {
+	background-color: #666;
+	color: #fff;
+}
+
+.footer-span {
+		font-size: 14px;
+	}
+
+.wuLogo {
+	height: 60px;
+	vertical-align: middle;
+}
+
+.alert {
+	width: 250px;
+	position: absolute;
+	top: -70px;
+	left: 50%;
+	-webkit-transform: translate(-50%, 0%);
+	        transform: translate(-50%, 0%);
+	background-color: #650000;
+	color: white;
+}
+
+/*
+First media query to change alignments slightly
+*/
+
+@media only screen and (min-width: 490px) {
+	.temperature-div > p {
+		font-size: 18px;
+	}
+
+	.icon-1, .icon-2, .icon-3 {
+		text-align: right;
+	}
+
+	.temperature-div-1, 
+	.temperature-div-2, 
+	.temperature-div-3 {
+		text-align: left;
+	}
+
+	.footer-span {
+		display: inline-block;
+		font-size: 14px;
+		margin-top: 22px;
+	}
+}
+
+/*
+Second media query to change alignments when Bootstrap jumps to SM size
+*/
+
+@media only screen and (min-width: 768px) {
+	.forecast-frame {
+		height: 90px;
+		border-left: 2px solid black;
+		border-bottom: 2px solid black;
+		border-right: none;
+	}
+
+	.forecast-frame:nth-child(3) {
+		border-right: 2px solid black;
+	}
+
+	.today-div {
+		padding-top: 42px;
+	}
+
+	.icon-1, .icon-2, .icon-3 {
+		height: 80px;
+		padding-top: 5px;
+	}
+
+	.temperature-div-1, 
+	.temperature-div-2, 
+	.temperature-div-3 {
+		padding-top: 19px;
+	}
+
+	.weekday-1, 
+	.weekday-2, 
+	.weekday-3 {
+		padding-top: 10px;
+	}
+}
+

@@ -1,0 +1,126 @@
+/**********************************
+GENERAL
+***********************************/
+
+h1, h2, h3, h4, h5 {
+	font-family: "Eagle Lake";
+	text-decoration: underline;
+	text-align: center;
+}
+
+/**********************************
+LEFT COLUMN
+***********************************/
+
+section {
+	width: 64%;
+	float: left;
+	font-family: "Gentium Book Basic";
+	font-size: 1.2rem;
+	border: 2px solid #c3c3c3;
+	padding: 15px 10px;
+	box-sizing: border-box;
+	background-color: rgba(240,240,240,0.5);
+}
+
+#instructions {
+	margin-top: 0;
+}
+
+/**********************************
+RIGHT COLUMN
+***********************************/
+
+#questionBox {
+	width: 34%;
+	float: right;
+	display: inline-block;
+}
+
+#throwButton {
+	position: relative;
+	background-color: gray;
+	margin: auto;
+	max-width: 80%;
+	padding: 10px;
+	margin-top: 15px;
+	text-align: center;
+	border: 2px solid #c3c3c3;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#result {
+	display: none;
+}
+
+#resultRow1, #resultRow2, #resultRow3 {
+	margin: 30px auto 0 auto;
+	width: 80%;
+	border: 1px solid gray;
+}
+
+.row1, .row2, .row3 {
+	display: inline-block;
+	height: 90px;
+	vertical-align: middle;
+	line-height: 90px;
+}
+
+.title, .name {
+	width: 80px;
+	text-align: center;
+}
+
+
+/**********************************
+MEDIA QUERIES
+***********************************/
+
+@media screen and (max-width: 690px) {
+	
+	section {
+		float: none;
+		display: block;
+		width: 95%;
+		margin: 2em auto;
+	}
+
+	.left {
+		height: auto;
+	}
+
+	#questionBox {
+		float: none;
+		display: block;
+		width: 95%;
+		margin: 2em auto;
+	}
+
+	#resultRow1, #resultRow2, #resultRow3 {
+		text-align: center;
+	}
+
+}
+
+@media screen and (min-width: 691px) and (max-width: 1120px) {
+	
+	.title, .name {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.row1, .row2, .row3 {
+		display: block;
+		vertical-align: middle;
+		height: auto;
+		line-height: 1.5em;
+	}
+
+	.image {
+		text-align: center;
+	}
+
+}
+
+

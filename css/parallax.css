@@ -1,0 +1,245 @@
+body {
+	font-family: Courier, sans-serif;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+h1 {
+	color: #222;
+	font-weight: 300;
+	font-size: 2em;
+}
+
+p {
+	color: #555;
+	text-align: left;
+}
+
+figure {
+	margin: auto;
+}
+
+section {
+	margin-bottom: 300px;
+	z-index: 5;
+	background-color: #fff;
+}
+
+.content article {
+	padding: 100px 0 0 0;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h5 {
+	margin: .5em auto;
+	max-width: 90%;
+
+}
+
+/*Parallax*/
+
+.headerbox {
+	position: relative;
+	height: 600px;
+	background-image: url(../images/pdxback.png);
+	background-size: auto 600px;
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	z-index: 5;
+}
+
+.logo {
+	height: 200px;
+	width: 100%;
+	background-image: url(../images/pdxmiddle.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 30%;
+	margin-top: -50px;
+	margin: auto;
+}
+
+#headerBar {
+	width: 100%;
+	background-color: #3c77bc;
+	height: 100%;
+	margin: auto;	
+	background-image: url(../images/pdxmiddle.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.headerContainer{
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+
+.picture {
+	height: 500px;
+	width: 500px;
+	border-radius: 30%;
+	background-color: #bbb;
+	margin: auto;
+	margin-top: 100px;
+	background-image: url(../images/falk.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 15%;
+	background-size: 500px auto;
+}
+
+.flying {
+	margin: auto;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.work {
+	height: 280px;
+	width: 240px;
+	display: inline-block;
+	margin-top: 100px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	background-color: #ddd;
+	text-align: center;
+}
+
+.colored {
+	color: #C92200;
+	font-weight: bold;
+}
+
+.imgContainer {
+	height: 160px;
+	width: 240px;
+	position: relative;
+}
+
+#work-1 .imgContainer {
+	background-image: url(../images/davidrolin.png);
+}
+
+#work-2 .imgContainer {
+	background-image: url(../images/conFusion.png);
+}
+
+#work-3 .imgContainer {
+	background-image: url(../images/meetupevents.png);
+}
+
+#work-4 .imgContainer {
+	background-image: url(../images/pomodoro.png);
+}
+
+#work-5 .imgContainer {
+	background-image: url(../images/runes.png);
+}
+
+#work-6 .imgContainer {
+	background-image: url(../images/matchinggame.png);
+}
+#work-7 .imgContainer {
+	background-image: url(../images/weatherapp.png);
+}
+
+#work-9 .imgContainer {
+	background-image: url(../images/addressbook.png);
+}
+
+
+.overlay {
+	height: 140px;
+	width: 220px;
+	background-color: rgba(40, 40, 40, .7);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -70px 0 0 -110px;
+}
+
+.hidden {
+	display: none;
+}
+
+.overlay h5{
+	margin-top: 45px;
+	color: white;
+}
+
+article.portfolio {
+	padding-bottom: 200px;
+}
+
+/*footer*/
+
+footer{
+	height:230px;
+	width: 100%;
+	color: white;
+	background-color: #000;
+	position: fixed;
+	bottom: 0;
+	z-index: -1;
+}
+
+footer p{
+	color: #eee;
+}
+
+footer a{
+	color: #666;
+}
+
+.footerwrap{
+	max-width: 960px;
+	margin: auto;
+	vertical-align: top;
+}
+
+.footerList {
+	list-style: none;
+	padding: 0;
+	padding-top: 1em;
+	margin: 0;
+}
+
+.left, .right {
+	display: inline-block;
+	width: 49%;
+	color: white;
+	height: 230px;
+	margin-top: 1em;
+	overflow: hidden;
+}
+
+.left {
+	text-align: left;
+}
+
+.left p{
+	margin-top: 3em;
+}
+
+.right p {
+	margin: 1em 0;
+	text-align: left;
+}
+
+svg {
+	margin-top: 2em;
+}

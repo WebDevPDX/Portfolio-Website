@@ -1,0 +1,174 @@
+/**********************************
+GENERAL
+***********************************/
+
+body {
+	font-family: Tahoma, sans-serif;
+	font-size: 16px;
+	background-image: url(../img/norwaycoast.jpg);
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: "Eagle Lake";
+	text-decoration: underline;
+}
+
+section {
+	font-family: "Gentium Book Basic";
+	font-size: 1.2rem;
+}
+
+#wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+  color: darkred;
+}
+
+a:hover {
+	color: darkgreen;
+}
+
+img {
+  max-width: 100%;
+}
+
+/**********************************
+HEADING
+***********************************/
+header{
+	text-align: center;
+	margin: 2% 0;
+}
+
+
+h1 {
+	font-size: 3rem;
+  	font-weight: 700;
+  	text-decoration: underline;
+}
+
+h1 a {
+	color: black;
+}
+
+/**********************************
+SECTIONS
+***********************************/
+
+section {
+	border: 2px solid #c3c3c3;
+	padding: 15px 10px;
+	box-sizing: border-box;
+}
+
+h2 {
+	text-align: center;
+}
+
+#introduction {
+	width: 64%;
+	float: left;
+	display: inline-block;
+	background-color: rgba(240,240,240,0.5);
+}
+
+#theAlphabet {
+	width: 34%;
+	float: right;
+	display: inline-block;
+	background-color: rgba(240,240,240,0.5);
+	text-align: center;
+	transform: scale(1);
+}
+
+#theAlphabet p {
+	text-align: left;
+}
+
+#instructions {
+	width: 64%;
+	float: left;
+	display: inline-block;
+	background-color: rgba(240,240,240,0.5);
+	margin-top: 2%;
+	text-align: left;
+}
+
+.important {
+	color: #BA0909;
+	font-weight: 600;
+}
+
+/**********************************
+ANIMATION
+***********************************/
+
+.alphabetImage {
+	width: 18%;
+	margin: 1% 1%;
+	display: inline-block;
+	opacity: 0;
+	transform: scale(4) rotate(-90deg);
+	transition: all 0.3s ease-in-out;
+}
+
+.is-showing {
+	opacity: 1;
+	transform: scale(1) rotate(0deg);
+}
+
+/**********************************
+TOOLTIP
+***********************************/
+
+.tooltip {
+	z-index: 10;
+	background-color: rgba(28, 28, 28, .9);
+	position: absolute;
+	left: -26%;
+	top: -180%;
+	font-size: .8em;
+	color: white;
+	max-width: 300px;
+	max-height: 280px;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+/**********************************
+MEDIA QUERIES
+***********************************/
+
+@media screen and (max-width: 690px) {
+	
+	#introduction {
+		float: none;
+		display: block;
+		width: 95%;
+		margin: 2em auto;
+	}
+
+	#theAlphabet {
+		float: none;
+		display: block;
+		width: 95%;
+		margin: 2em auto;
+	}
+
+	#instructions {
+		float: none;
+		display: block;
+		width: 95%;
+		margin: 2em auto;
+	}
+
+	.tooltip {
+		display: none;
+	}
+}
+

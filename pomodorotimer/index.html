@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pomodoro Clock</title>
+	<link href='https://fonts.googleapis.com/css?family=Nova+Mono|Cutive+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper" id="wrapper">
+		<h1>Pomodoro Work / Break Timer</h1>
+		<div class="workTime" id="workTime">
+			<p>Work Time</p>
+			<div class="more button adjustment" id="moreWork" onClick="addWork()">+</div>
+			<div class="time adjustment" id="workMinutes"></div>
+			<div class="less button adjustment" id="lessWork" onClick="subWork()">-</div>
+		</div>
+		<div class="breakTime" id="breakTime">
+			<p>Break Time</p>
+			<div class="more button adjustment" id="moreBreak" onClick="addBreak()">+</div>
+			<div class="time adjustment" id="breakMinutes"></div>
+			<div class="less button adjustment" id="lessWork" onClick="subBreak()">-</div>
+		</div>
+		<div class="controls" id="controls">
+			<div class="start button controlButtons" id="start" onClick="startStop()">Start</div>
+			<div class="stop button controlButtons" id="stop" onClick="stopTimer()">Stop</div>
+			<div class="reset button controlButtons" id="stop" onClick="resetTimer()">Reset</div>
+		</div>
+		<div class="countdownDisplay" id="countdownDisplay">
+			<div class="display" id="display"></div>
+		</div>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="scriptnew.js"></script>
+</body>
+</html>

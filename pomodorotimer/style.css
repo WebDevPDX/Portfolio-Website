@@ -1,0 +1,94 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Nova Mono", sans-serif;
+	font-size: 16px;
+	background-color: #0C0E33;
+	color: #fff;
+}
+
+/*div {
+	border: 1px solid red;
+}*/
+
+.wrapper {
+	width: 600px;
+	margin: 150px auto;
+	text-align: center;
+}
+
+.workTime, .breakTime{
+	width: 45%;
+	display: inline-block;
+	text-align: center;
+}
+
+p {
+	margin: 0;
+}
+
+.button {
+	cursor: pointer;
+	width: 15px;
+	height: 2rem;
+	padding: 8px;
+	background-color: #ddd;
+	border-radius: 5px;
+	font-size: 24px;
+}
+
+.time {
+	font-size: 24px;
+	width: 30px;
+}
+
+.adjustment {
+	display: inline-block;
+}
+
+.controls {
+	font-size: 0px;
+}
+
+.controlButtons {
+	display: inline-block;
+	width: 20%;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 15px 1.6666%;
+	padding-top: 12px;
+}
+
+.button {
+	color: #000;
+}
+
+.countdownDisplay {
+	font-family: "Nova Mono", monospace;
+	font-size: 3rem;
+	width: 100%;
+	height: 5rem;
+
+	color: #fff;
+}
+
+.display {
+	border-radius: 5px;	
+}
+
+.minutes {
+	display: inline-block;
+	width: 40%;
+	height: 100%;
+	float: left;
+	text-align: left;
+}
+
+.seconds {
+	display: inline-block;
+	width: 40%;
+	height: 100%;
+	float: right;
+	color: #000;
+	text-align: left;
+}

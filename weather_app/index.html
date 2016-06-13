@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Weather App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+				<!-- top section - holds currently observed weather -->
+				<div class="row">
+					<div class="col-xs-12 now-frame" id="now">
+						<div class="row">
+							<div class="col-xs-12 city" id="city"></div>
+							<div class="col-xs-4  col-xs-offset-4 col-sm-4 col-sm-offset-0 col-sm-push-4 icon" id="icon"></div>
+							<div class="col-xs-4 col-sm-4 col-sm-push-4 temperature-div">
+								<span id="temp"></span>
+								<span id="weather"></span>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-sm-pull-8 today-div" id="today">Today</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<!-- forecast section -->
+					<div class="col-xs-12 col-sm-4 forecast-frame" id="day1">
+						<div class="row">
+							<div class="col-xs-4 col-sm-4 col-sm-offset-2 icon-1" id="day1-icon"></div>
+							<div class="col-xs-4 col-xs-push-4 col-sm-4 col-sm-push-0 temperature-div-1">
+								<span id="day1-temp"></span>
+							</div>
+							<div class="col-xs-4 col-xs-pull-4 col-sm-4 cols-sm-pull-0 weekday-1" id="day1-weekday"></div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 forecast-frame" id="day2">
+						<div class="row">
+							<div class="col-xs-4 col-sm-4 col-sm-offset-2 icon-2" id="day2-icon"></div>
+							<div class="col-xs-4 col-xs-push-4 col-sm-4 col-sm-push-0 temperature-div-2">
+								<span id="day2-temp"></span>
+							</div>
+							<div class="col-xs-4 col-xs-pull-4 col-sm-4 cols-sm-pull-0 weekday-2" id="day2-weekday"></div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 forecast-frame" id="day3">
+						<div class="row">
+							<div class="col-xs-4 col-sm-4 col-sm-offset-2 icon-3" id="day3-icon"></div>
+							<div class="col-xs-4 col-xs-push-4 col-sm-4 col-sm-push-0 temperature-div-3">
+								<span id="day3-temp"></span>
+							</div>
+							<div class="col-xs-4 col-xs-pull-4 col-sm-4 cols-sm-pull-0 weekday-3" id="day3-weekday"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- zip code submission form -->
+		<div class="row">
+			<form action="submit" class="form-inline" id="zipForm">
+				<div class="form-group">
+				    <label class="col-xs-4" for="zipCodeInput">Zip Code</label>
+				    <input type="text" class="col-xs-4" id="zipCodeInput" placeholder="Zip Code">
+				    <button type="submit" class="btn btn-default" id="zipSubmit">Change</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- fixed footer - I am not happy with how it overlaps the content -->
+	<footer class="footer navbar-fixed-bottom">
+		<div class="container">
+			<div class="row">
+				<span class="footer-span">Powered by:</span>
+				<a href="https://www.wunderground.com/"><img src="wundergroundLogo_4c_horz.png" alt="Logo of Weather Underground" class="wuLogo"></a>
+			</div>
+		</div>
+	</footer>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
